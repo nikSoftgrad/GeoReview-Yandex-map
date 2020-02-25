@@ -45,17 +45,18 @@
     </div>
   </script>
   <script type="text/x-handlebars-template" id="reviewTemplate">
-    {{#each reviewList}}
-      <li class="reviews__item old-review">
-        <div class="">asd</div>
-        <div class="old-review__info">
-            <span class="old-review__user">{{userName}}</span>
-            <span class="old-review__place">{{place}}</span>
-            <span class="old-review__date">{{date}}</span>
-        </div>
-        <div class="old-review__text">{{reviewText}}</div>
-      </li>
-    {{/each}}
+    <ul class="reviews__list">
+      {{#each reviewList}}
+        <li class="reviews__item old-review">
+          <div class="old-review__info">
+              <span class="old-review__user">{{userName}}</span>
+              <span class="old-review__place">{{place}}</span>
+              <span class="old-review__date">{{date}}</span>
+          </div>
+          <div class="old-review__text">{{reviewText}}</div>
+        </li>
+      {{/each}}
+    </ul>
   </script>
 </body>
 </html>
